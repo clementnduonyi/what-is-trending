@@ -35,7 +35,7 @@ Ensure you have the following installed:
 ### **2. Clone the Repository**  
 
 ```sh
-git clone https://github.com/telexintegrations/what-is-trending.git
+git clone https://github.com/clementnduonyi/what-is-trending.git
 cd wit-what-is-trending-
 ```
 
