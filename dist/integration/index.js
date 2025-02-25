@@ -11,7 +11,7 @@ exports.telexIntegrationConfig = {
             "app_description": "This application pulls trending topics at intervals and send the with links to assigned Telex channel. It has the functinality for users to select their prefered Trends",
             "app_logo": "https://res.cloudinary.com/ccapp/image/upload/v1740234932/sparkling-cosmic-system-png-5690533_gafzof.svg",
             "app_name": "WIT-what is tending?.",
-            "app_url": "https://klpmbf9x-3000.uks1.devtunnels.ms/",
+            "app_url": "https://what-is-trending.onrender.com/",
             "background_color": "#HEXCODE"
         },
         "integration_category": "Monitoring & Logging",
@@ -44,7 +44,7 @@ exports.telexIntegrationConfig = {
                 "options": ["politics", "crypto", "tech", "gossip", "business", "sports", "education", "football", "nigeria-politics", "nigeria-news"]
             }
         ],
-        "tick_url": "https://klpmbf9x-3000.uks1.devtunnels.ms/trends",
+        "tick_url": "https://what-is-trending.onrender.com/trends",
         "target_url": ""
     }
 };

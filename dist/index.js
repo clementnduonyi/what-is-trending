@@ -16,12 +16,14 @@ const express_1 = __importDefault(require("express"));
 const trends_1 = __importDefault(require("./reddit/trends"));
 const storage_1 = __importDefault(require("./data/storage"));
 const node_fetch_1 = __importDefault(require("node-fetch"));
+const cors_1 = __importDefault(require("cors"));
 require('dotenv').config();
 const integration_1 = require("./integration");
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 const url = process.env.TELEX_RETURN_URL;
 app.use(express_1.default.json());
+app.use((0, cors_1.default)());
 // Endpoint to retrieve telexIntegrationConfig
 app.get('/integration', (req, res) => {
     res.json(integration_1.telexIntegrationConfig);
