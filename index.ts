@@ -2,6 +2,7 @@ import express from "express";
 import fetchRedditTrends from './reddit/trends';
 import storage from './data/storage';
 import fetch from 'node-fetch';
+import cors from 'cors'
 
 require('dotenv').config();
 import { telexIntegrationConfig } from './integration'
@@ -12,6 +13,7 @@ const PORT = process.env.PORT || 3000;
 const url = process.env.TELEX_RETURN_URL;
 
 app.use(express.json());
+app.use(cors());
 
 
 interface TelexResponse {
